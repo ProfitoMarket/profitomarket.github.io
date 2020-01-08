@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" />
+
+    <title>Profito Market</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">&nbsp;&nbsp;Profito Market</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col s12 m8 offset-m2 l4 offset-l4" style="padding-top: 6%;">
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <h4 class="header2" style="vertical-align:center;">Term values</h4>
+                <div class="row">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn' style="width: 300px" href='#' data-target='dropdown1'>Selet a term</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="longterm.html"><i class="material-icons">share</i>Long term</a></li>
+                        <li><a href="shortterm.html"><i class="material-icons">show_chart</i>Short term</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer" style="position:fixed;bottom:0;left:0;width:100%;">
+        <div class="footer-copyright">
+            <div class="container">
+                Made with ❤ in India
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
+    </script>
+    <script src="jquery-3.4.1.min.js"></script>
+</body>
+
+</html>
